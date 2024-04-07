@@ -8,6 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class Selenium_TestCases {
     public static WebDriver driver;
     public static JavascriptExecutor js;
@@ -58,6 +61,13 @@ public class Selenium_TestCases {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"filters\"]/div[2]/ul/div[1]/label/input")));
         driver.findElement(By.xpath("//*[@id=\"filters\"]/div[2]/ul/div[1]/label/input")).click();
+        driver.findElement(By.xpath("//*[@id=\"filters\"]/div[6]/label/input")).click();
+
+        boolean en1=driver.findElement(By.xpath("//*[@id=\"filters\"]/div[2]/ul/div[1]/label/input")).isEnabled();
+        boolean en2=driver.findElement(By.xpath("//*[@id=\"filters\"]/div[6]/label/input")).isEnabled();
+
+        assertTrue(en1);
+        assertTrue(en2);
     }
     @Test
     public void searchBar(){
@@ -66,6 +76,13 @@ public class Selenium_TestCases {
         driver.findElement(By.cssSelector("*[data-test=\"search-query\"]")).click();
         driver.findElement(By.cssSelector("*[data-test=\"search-query\"]")).sendKeys("Combination Pliers");
         driver.findElement(By.cssSelector("*[data-test=\"search-query\"]")).sendKeys(Keys.ENTER);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[data-test=\"search_completed\"]")));
+
+        String result=driver.findElement(By.cssSelector("[data-test=\"search_completed\"]")).getText();
+        assertEquals("Combination Pliers\n" +
+                "$14.15", result);
     }
     @Test
     public void testPriceRange(){
@@ -107,9 +124,19 @@ public class Selenium_TestCases {
             dropdown.findElement(By.xpath("//option[. = 'Webmaster']")).click();
         }
         driver.findElement(By.cssSelector("*[data-test=\"message\"]")).click();
-        driver.findElement(By.cssSelector("*[data-test=\"message\"]")).sendKeys("Hi.Hello.BYEEE.PEEEEEP peeeepepepepepapjfapcieponvapvn");
+        driver.findElement(By.cssSelector("*[data-test=\"message\"]")).sendKeys(
+                "আমার যমুনার জল দেখতে কালো,\n" +
+                "চান করিতে লাগে ভালো,\n" +
+                "যৌবন মিশিয়া গেলো জলে\n");
         driver.findElement(By.cssSelector(".row:nth-child(2)")).click();
         driver.findElement(By.cssSelector("*[data-test=\"contact-submit\"]")).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("/html/body/app-root/div/app-contact/div/div/div/div"), "Thanks for your message! We will contact you shortly."));
+
+        String message = driver.findElement(By.xpath("/html/body/app-root/div/app-contact/div/div/div/div")).getText();
+
+        assertEquals("Thanks for your message! We will contact you shortly.", message);
     }
     @Test
     public void testLogin() {
@@ -152,7 +179,7 @@ public class Selenium_TestCases {
         driver.findElement(By.cssSelector("*[data-test=\"register-submit\"]")).click();
     }
     @Test
-    public void testForgotPassword() throws InterruptedException {
+    public void testForgotPassword(){
         driver.get("https://practicesoftwaretesting.com/#/auth/forgot-password");
         driver.manage().window().setSize(new Dimension(1936, 1056));
         driver.findElement(By.cssSelector("*[data-test=\"email\"]")).click();
@@ -248,6 +275,7 @@ public class Selenium_TestCases {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-1\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-1\"]")).click();
+
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-2\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-2\"]")).click();
         wait.until(ExpectedConditions.textToBePresentInElementValue(By.cssSelector("*[data-test=\"address\"]"), "Test street 98"));
@@ -302,6 +330,7 @@ public class Selenium_TestCases {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-1\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-1\"]")).click();
+
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-2\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-2\"]")).click();
         wait.until(ExpectedConditions.textToBePresentInElementValue(By.cssSelector("*[data-test=\"address\"]"), "Test street 98"));
@@ -312,7 +341,6 @@ public class Selenium_TestCases {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-3\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-3\"]")).click();
         driver.findElement(By.cssSelector("*[data-test=\"payment-method\"]")).click();
-
         {
             WebElement dropdown = driver.findElement(By.cssSelector("*[data-test=\"payment-method\"]"));
             dropdown.findElement(By.xpath("//option[. = 'Credit Card']")).click();
