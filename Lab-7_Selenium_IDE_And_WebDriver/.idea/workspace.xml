@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbbb73c4-747c-499a-a2a6-818ab376c20c" name="Changes" comment="Completed Lab07" />
+    <list default="true" id="fbbb73c4-747c-499a-a2a6-818ab376c20c" name="Changes" comment="Completed Lab07">
+      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium_TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium_TestCases.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "TahlilMahfuz"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TahlilMahfuz&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -82,36 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Selenium_TestCases.testCheckOutBuyNowPayLater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab-7_Selenium_IDE_And_WebDriver" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Selenium_TestCases" />
-      <option name="METHOD_NAME" value="testCheckOutBuyNowPayLater" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Selenium_TestCases.testCheckOutCreditCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab-7_Selenium_IDE_And_WebDriver" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Selenium_TestCases" />
-      <option name="METHOD_NAME" value="testCheckOutCreditCard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Selenium_TestCases.testForgotPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab-7_Selenium_IDE_And_WebDriver" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Selenium_TestCases" />
-      <option name="METHOD_NAME" value="testForgotPassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Selenium_TestCases.testGoogle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab-7_Selenium_IDE_And_WebDriver" />
       <option name="PACKAGE_NAME" value="" />
@@ -122,13 +96,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Selenium_TestCases.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab-7_Selenium_IDE_And_WebDriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Selenium_TestCases" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="seleniumTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab-7_Selenium_IDE_And_WebDriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="seleniumTestCases" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="seleniumTestCases.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab-7_Selenium_IDE_And_WebDriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="seleniumTestCases" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Selenium_TestCases" />
+        <item itemvalue="JUnit.Selenium_TestCases.testLogin" />
+        <item itemvalue="JUnit.seleniumTestCases.testLogin" />
+        <item itemvalue="JUnit.seleniumTestCases" />
         <item itemvalue="JUnit.Selenium_TestCases.testGoogle" />
-        <item itemvalue="JUnit.Selenium_TestCases.testCheckOutBuyNowPayLater" />
-        <item itemvalue="JUnit.Selenium_TestCases.testCheckOutCreditCard" />
-        <item itemvalue="JUnit.Selenium_TestCases.testForgotPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +148,7 @@
       <workItem from="1712490827911" duration="1148000" />
       <workItem from="1712493782592" duration="2294000" />
       <workItem from="1712496090333" duration="6250000" />
+      <workItem from="1713470477844" duration="1494000" />
     </task>
     <task id="LOCAL-00001" summary="Testcases added. Assertion in progress">
       <option name="closed" value="true" />
@@ -167,6 +171,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

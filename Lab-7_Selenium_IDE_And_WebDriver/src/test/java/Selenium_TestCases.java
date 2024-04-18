@@ -147,7 +147,7 @@ public class Selenium_TestCases {
         driver.findElement(By.cssSelector("*[data-test=\"last-name\"]")).click();
         driver.findElement(By.cssSelector("*[data-test=\"last-name\"]")).sendKeys("Mahfuz");
         driver.findElement(By.cssSelector("*[data-test=\"dob\"]")).click();
-        driver.findElement(By.cssSelector("*[data-test=\"dob\"]")).sendKeys("2024-07-31");
+        driver.findElement(By.cssSelector("*[data-test=\"dob\"]")).sendKeys("2"+"\t"+"2"+"\t"+"2021");
         driver.findElement(By.cssSelector("*[data-test=\"address\"]")).click();
         driver.findElement(By.cssSelector("*[data-test=\"address\"]")).sendKeys("Dhaka");
         driver.findElement(By.cssSelector("*[data-test=\"postcode\"]")).click();
@@ -172,8 +172,6 @@ public class Selenium_TestCases {
         driver.findElement(By.cssSelector("*[data-test=\"phone\"]")).sendKeys("123421341241");
         driver.findElement(By.cssSelector("*[data-test=\"email\"]")).click();
         driver.findElement(By.cssSelector("*[data-test=\"email\"]")).sendKeys("practice@gmail.com");
-        driver.findElement(By.cssSelector("*[data-test=\"dob\"]")).click();
-        driver.findElement(By.cssSelector("*[data-test=\"dob\"]")).sendKeys("2003-07-31");
         driver.findElement(By.cssSelector("*[data-test=\"password\"]")).click();
         driver.findElement(By.cssSelector("*[data-test=\"password\"]")).sendKeys("12345314142ASDFWDW!@@Fa");
         driver.findElement(By.cssSelector("*[data-test=\"register-submit\"]")).click();
