@@ -58,13 +58,14 @@ public class Selenium_TestCases {
     public void checkBox(){
         driver.get("https://practicesoftwaretesting.com/");
         driver.manage().window().setSize(new Dimension(1720, 934));
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"filters\"]/div[2]/ul/div[1]/label/input")));
-        driver.findElement(By.xpath("//*[@id=\"filters\"]/div[2]/ul/div[1]/label/input")).click();
-        driver.findElement(By.xpath("//*[@id=\"filters\"]/div[6]/label/input")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"filters\"]/fieldset[1]/div[1]/ul/fieldset/div[1]/label/input")));
 
-        boolean en1=driver.findElement(By.xpath("//*[@id=\"filters\"]/div[2]/ul/div[1]/label/input")).isEnabled();
-        boolean en2=driver.findElement(By.xpath("//*[@id=\"filters\"]/div[6]/label/input")).isEnabled();
+        driver.findElement(By.xpath("//*[@id=\"filters\"]/fieldset[1]/div[1]/ul/fieldset/div[1]/label/input")).click();
+        driver.findElement(By.xpath("//*[@id=\"filters\"]/fieldset[1]/div[1]/ul/fieldset/div[6]/label/input")).click();
+
+        boolean en1=driver.findElement(By.xpath("//*[@id=\"filters\"]/fieldset[1]/div[1]/ul/fieldset/div[1]/label/input")).isEnabled();
+        boolean en2=driver.findElement(By.xpath("//*[@id=\"filters\"]/fieldset[1]/div[1]/ul/fieldset/div[6]/label/input")).isEnabled();
 
         assertTrue(en1);
         assertTrue(en2);
@@ -273,6 +274,11 @@ public class Selenium_TestCases {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-1\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-1\"]")).click();
+
+
+
+
+
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("*[data-test=\"proceed-2\"]")));
         driver.findElement(By.cssSelector("*[data-test=\"proceed-2\"]")).click();

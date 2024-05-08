@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbbb73c4-747c-499a-a2a6-818ab376c20c" name="Changes" comment="Completed Lab07">
-      <change afterPath="$PROJECT_DIR$/src/test/java/seleniumTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Selenium_TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium_TestCases.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,23 +50,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;S:/SWE_STUDIES/Github Projects/SWE-4604_TestingAndQualityAssurance/Lab-7_Selenium_IDE_And_WebDriver/SeleniumIDE_TestCases&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "S:/SWE_STUDIES/Github Projects/SWE-4604_TestingAndQualityAssurance/Lab-7_Selenium_IDE_And_WebDriver",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="S:\SWE_STUDIES\Github Projects\SWE-4604_TestingAndQualityAssurance\Lab-7_Selenium_IDE_And_WebDriver\SeleniumIDE_TestCases" />
@@ -86,21 +86,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Selenium_TestCases.testGoogle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Selenium_TestCases.checkBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab-7_Selenium_IDE_And_WebDriver" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Selenium_TestCases" />
-      <option name="METHOD_NAME" value="testGoogle" />
+      <option name="METHOD_NAME" value="checkBox" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Selenium_TestCases.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Selenium_TestCases.testCheckOutBuyNowPayLater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab-7_Selenium_IDE_And_WebDriver" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Selenium_TestCases" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="METHOD_NAME" value="testCheckOutBuyNowPayLater" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,11 +115,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="seleniumTestCases.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="seleniumTestCases.testSignup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab-7_Selenium_IDE_And_WebDriver" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="seleniumTestCases" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="METHOD_NAME" value="testSignup" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Selenium_TestCases" />
-        <item itemvalue="JUnit.Selenium_TestCases.testLogin" />
-        <item itemvalue="JUnit.seleniumTestCases.testLogin" />
+        <item itemvalue="JUnit.Selenium_TestCases.testCheckOutBuyNowPayLater" />
+        <item itemvalue="JUnit.Selenium_TestCases.checkBox" />
         <item itemvalue="JUnit.seleniumTestCases" />
-        <item itemvalue="JUnit.Selenium_TestCases.testGoogle" />
+        <item itemvalue="JUnit.seleniumTestCases.testSignup" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +148,10 @@
       <workItem from="1712490827911" duration="1148000" />
       <workItem from="1712493782592" duration="2294000" />
       <workItem from="1712496090333" duration="6250000" />
-      <workItem from="1713470477844" duration="1494000" />
+      <workItem from="1713470477844" duration="1689000" />
+      <workItem from="1713704811695" duration="598000" />
+      <workItem from="1714012990439" duration="537000" />
+      <workItem from="1715194806168" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="Testcases added. Assertion in progress">
       <option name="closed" value="true" />
@@ -166,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712503810247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed Lab07">
+      <option name="closed" value="true" />
+      <created>1713472349148</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713472349148</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
